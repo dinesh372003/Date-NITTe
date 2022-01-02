@@ -2,12 +2,15 @@ import React from 'react';
 import Navbars from '../Components/Navbar/Navbars';
 import Styles from "./Style.module.css";
 import Contents from "../Components/Contents/Contents";
+import Recommendations from '../Components/Recommendations/Recommendations';
 
 export const home = () => {
     const content = "Contents";
     return (
         <div>
-            <Navbars />
+            <div style={{ position: "fixed", width: "100%" }}>
+                <Navbars />
+            </div>
             <div className={Styles.row}>
                 <div className={Styles.column1} />
                 <div className={Styles.column2}>
@@ -16,7 +19,9 @@ export const home = () => {
                     <Contents />
                     <Contents />
                 </div>
-                <div className={Styles.column3}>Recommendations</div>
+                <div className={Styles.column3}>
+                    <Recommendations />
+                </div>
                 <div className={Styles.column4} />
             </div>
         </div>
