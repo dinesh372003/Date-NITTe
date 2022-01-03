@@ -26,7 +26,10 @@ function Recommendation() {
             <div className={Styles.Info}>{Info}</div>
             <div className={Styles.Symbols}>
                 <div className={Styles.Thumbs}>
-                    <i className="fas fa-thumbs-up" />
+                    <i className="far fa-2x fa-thumbs-up" />
+                </div>
+                <div className={Styles.Dropdown}>
+                    <i className="fas fa-2x fa-chevron-circle-down" />
                 </div>
             </div>
         </div>
