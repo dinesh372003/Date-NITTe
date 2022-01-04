@@ -2,8 +2,10 @@ import React from "react";
 import {
 	BrowserRouter as Router, Route, Switch, Redirect,
 } from "react-router-dom";
-import { trial } from "./pages/auth/trial";
 import { Login } from "./pages/auth/login";
+// import { Navigation } from "./pages/navigation";
+import { trial } from "./pages/auth/trial";
+// import { Login } from "./pages/auth/login";
 import { home } from "./pages/home";
 import { Chat } from "./pages/Chat";
 
