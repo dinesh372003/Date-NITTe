@@ -1,9 +1,16 @@
+.hide {
+    display: inline-block;
+}
 .link {
     color: white;
     text-decoration: none;
 }
 .link:hover {
     color:white;
-    // background-color: blue;
     text-decoration: none;
+}
+@media screen and (max-width: 500px) {
+    .hide {
+        display: none;
+    }
 }

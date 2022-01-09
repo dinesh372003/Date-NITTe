@@ -1,3 +1,7 @@
+.hide {
+  display: inline-block;
+}
+
 .link {
   color: white;
   text-decoration: none;
@@ -6,5 +10,11 @@
 .link:hover {
   color: white;
   text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+  .hide {
+    display: none;
+  }
 }
 /*# sourceMappingURL=Style.module.css.map */

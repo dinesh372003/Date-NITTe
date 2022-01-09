@@ -74,19 +74,31 @@
 
 @media screen and (max-width: 768px) {
   .left {
-    width: 30%;
+    width: 40%;
   }
   .right {
-    width: 70%;
+    width: 60%;
   }
 }
 
 @media screen and (max-width: 640px) {
+  .grid {
+    width: 75%;
+  }
   .left {
     width: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .right {
     display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .grid {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=Style.module.css.map */

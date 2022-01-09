@@ -7,7 +7,7 @@ function SentMessage({ Msg }) {
         <div className={Styles.container}>
           <div className={Styles.Content}>
             <div className={Styles.Msg}>
-              {Msg}
+                {Msg}
             </div>
           </div>
         </div>

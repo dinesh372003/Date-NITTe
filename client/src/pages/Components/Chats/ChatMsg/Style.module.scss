@@ -1,9 +1,18 @@
+body,html {
+    overflow: auto;
+}
 .container
 {
     height: 100%;
+    scroll-behavior: smooth;
+    // overflow: auto;
     // border: 2px solid greenyellow;
 }
+.fit {
+    height: 100%;
+}
 .top {
+    // position: fixed;
     display: flex;
     height: 50px;
     width: 100%;
@@ -28,14 +37,36 @@
     font-weight: 495;
     font-size: 20px;
 }
-$a: 100%; 
-$b: 50px;
-.body
+$c: 100%; 
+$d: 50px;
+.Msges
 {
-    display: flex;
+    margin-top: 5px;
+    overflow-y: auto;
     width: 100%;
-    height: calc(#{$a} - #{$b});
+    height: calc(#{$c} - #{$d});
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+    // background-image: ;
 }
+.Msges::-webkit-scrollbar 
+{ 
+    width: 7.5px;
+}
+.Msges::-webkit-scrollbar-track {
+    background: none; 
+  }
+   
+  /* Handle */
+.Msges::-webkit-scrollbar-thumb {
+    background: rgba(192, 182, 182, 0.75); 
+  }
+  
+  /* Handle on hover */
+.Msges::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.Msges::-webkit-scrollbar-thumb:active {
+    background: rgb(0, 47, 255); 
+  }

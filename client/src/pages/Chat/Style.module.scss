@@ -16,7 +16,8 @@
 {
     position: fixed;
     width: 100%;
-    // display: inline-block;
+    // display: flex;
+    // flex-direction: column;
     text-align: center;
     height: 100%;
 }
@@ -32,7 +33,6 @@
 .left {
     float: left;
     width: 300px;
-    // overflow: auto;
     padding: 10px;
     border: 0.5px solid blue;
     height: 100%;
@@ -83,17 +83,26 @@ $b: 300px;
 }
 @media screen and (max-width: 768px) {
     .left {
-        width:30%;
+        width:40%;
     }
     .right {
-        width: 70%;
+        width: 60%;
     }
 }
 @media screen and (max-width: 640px) {
+    .grid {
+        width: 75%;
+    }
     .left {
         width:100%;
+        align-self: center;
     }
     .right {
         display: none;
+    }
+}
+@media screen and (max-width: 425px) {
+    .grid {
+        width: 100%;
     }
 }

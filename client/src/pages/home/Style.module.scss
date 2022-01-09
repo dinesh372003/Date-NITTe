@@ -1,4 +1,4 @@
-  html,body {
+html,body {
     overflow: hidden;
   }
 .column1 {
@@ -13,7 +13,7 @@
     width: 50%;
     height: 90vh;
     padding: 10px;
-    border: 1px solid red;
+    // border: 1px solid red;
     text-align: center;
     margin-top: 75px;
     // max-height: 100%;
@@ -27,11 +27,14 @@
     float: left;
     width: 30%;
     padding: 10px;
-    border: 1px solid red;
+    transition: transform .2s;
     height: auto;
     text-align: center;
     margin-top: 75px;
 
+  }
+.column3:hover {
+  transform: scale(1.025);
   }
 .column4 {
     float: left;
@@ -42,6 +45,9 @@
   }
 .scroll {
   overflow: scroll;
+}
+.row {
+  display: flex;
 }
 .row:after {
   content: "";
@@ -69,28 +75,43 @@
         display: none;
     }
     .column2 {
+        margin-left: 0;
         width: 70%;
+        padding: 0;
     }
     .column3 {
         margin-left: 70%;
+        padding: 0;
         width: 30%;
     }
     .column4 {
         display: none;
     }
 }
-
-@media screen and (max-width: 425px) {
-    .column1 {
-      display: none;
-    }
-    .column2 {
-      width: 100%;
-    }
-    .column3 {
-      display: none;
-    }
-    .column4 {
-      display: none;
-    }
+@media screen and (max-width: 735px) {
+  html,body {
+    overflow: auto;
+  }
+  .row {
+    display: flex;
+    flex-direction:column-reverse;
+  }
+  .column1 {
+    display: none;
+  }
+  .column2{
+    align-self: center;
+    width: 95%;
+    float: left;
+    overflow: auto;
+  }
+  .column3 {
+    align-self: center;
+    position: static;
+    margin-left: 0;
+    width: 75%;
+  }
+  .column4 {
+    display: none;
+  }
 }

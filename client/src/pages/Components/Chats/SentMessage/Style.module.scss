@@ -5,7 +5,7 @@
     min-height: 40px;
     height: auto;
     width: 100%;
-    justify-content: end;
+    justify-content: flex-end;
     text-align: left;
     margin-top: 5px;
     // border: 2px solid black;
@@ -25,13 +25,13 @@
 }
 .Msg
 {
-    margin-left: 1px;
-    margin-right: 1px;
+    margin: 3px 1px;
+    // margin-right: 1px;
     padding: 10px;
     // padding-left: 10px;
     // border: 1px solid greenyellow;
     border-radius: 10px;
-    margin-top: 5px;
+    // margin-top: 5px;
     color: honeydew;
     background-color: rgb(5, 133, 5);
 }

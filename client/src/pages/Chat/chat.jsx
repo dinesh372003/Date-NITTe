@@ -22,9 +22,15 @@ const changePerson = (value) => {
                     </div>
                 <div className={Styles.chatss}>
                     <ChatNames
-                        Name="Dinesh"
-                        LastMsg="Hello"
-                        Profile="114120074.jpg"
+                            Name="EFGH"
+                            LastMsg="What are you doing?"
+                            Profile="send.png"
+                            changePerson={changePerson}
+                    />
+                    <ChatNames
+                        Name="Maithreyan"
+                        LastMsg="I Love You"
+                        Profile="Maith.jpg"
                         changePerson={changePerson}
                     />
                     <ChatNames
@@ -36,46 +42,55 @@ const changePerson = (value) => {
                     <ChatNames
                         Name="ABCD"
                         LastMsg="I am here"
+                        Profile="114120074.jpg"
                         changePerson={changePerson}
                     />
                     <ChatNames
                         Name="EFGH"
                         LastMsg="What are you doing?"
+                        Profile="send.png"
                         changePerson={changePerson}
                     />
                     <ChatNames
                         Name="IJKL"
                         LastMsg="Hi"
+                        Profile="114120074.jpg"
                         changePerson={changePerson}
                     />
                     <ChatNames
                         Name="MNOP"
                         LastMsg="Are you playing?"
+                        Profile="send.png"
                         changePerson={changePerson}
                     />
                     <ChatNames
                         Name="QRST"
                         LastMsg="Bro, I am QRST"
+                        Profile="114120074.jpg"
                         changePerson={changePerson}
                     />
                     <ChatNames
                         Name="UVW"
                         LastMsg="May I know your Name?"
+                        Profile="send.png"
                         changePerson={changePerson}
                     />
                     <ChatNames
                         Name="XYZ"
                         LastMsg="Hi da !"
+                        Profile="114120074.jpg"
                         changePerson={changePerson}
                     />
                     <ChatNames
                         Name="123"
                         LastMsg="We are here"
+                        Profile="send.png"
                         changePerson={changePerson}
                     />
                     <ChatNames
                         Name="456"
                         LastMsg="We are arriving"
+                        Profile="114120074.jpg"
                         changePerson={changePerson}
                     />
                 </div>

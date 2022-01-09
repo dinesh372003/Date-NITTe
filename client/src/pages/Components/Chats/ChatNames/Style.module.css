@@ -8,6 +8,7 @@
   height: 50px;
   margin-bottom: 2px;
   cursor: pointer;
+  border-bottom: 1px solid #e2e2e2;
 }
 
 .container:hover {
@@ -28,6 +29,7 @@
 
 .content {
   margin-left: 2px;
+  border: 1 px solid #dddada;
 }
 
 .image {

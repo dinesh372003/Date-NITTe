@@ -19,18 +19,10 @@ import {
 import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
-// import Select from '@material-ui/core/Select';
 import NativeSelect from '@material-ui/core/NativeSelect';
-// import InputBase from '@material-ui/core/InputBase';
-// import FormHelperText from '@material-ui/core/FormHelperText';
 
 import "react-toastify/dist/ReactToastify.css";
-// import InputLabel from "@material-ui/core/InputLabel";
-// import MenuItem from "@material-ui/core/MenuItem";
-// import FormControl from '@material-ui/FormControl';
-// import Select from "@material-ui/core/Select";
 
-// import { ToastContainer, toast } from "react-toastify";
 import {
 	Button,
     TextField,
@@ -39,18 +31,14 @@ import {
 	InputAdornment,
 	IconButton,
 } from "@material-ui/core";
-// import PhotoCamera from '@material-ui/icons/PhotoCamera';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
-// import Typography from '@material-ui/core/Typography';
 import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
-// import { ApiService } from "../../../api.services";
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import Styles from "./Style.module.css";
-// import Background from "../../../assets/images/bg.jpg";
-// import { useStyles } from "./styles";
+
 const finalSpaceCharacters = [
 	{
 	  id: 'Entertainment',
@@ -105,8 +93,6 @@ export const trial = () => {
 	const handleReset = () => {
 		setActiveStep(0);
 	};
-	// function HorizontalLabelPositionBelowStepper() {
-	// 	}
 	const [showPassword, setShowPassword] = useState(false);
 		const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 		const [Name, setName] = useState("");
@@ -221,14 +207,14 @@ function getStepContent(stepIndex) {
 		case 0:
 		return (
 <div className={Styles.paper}>
-{/* <Grid
+<Grid
 	className={Styles.form}
 	container
 	spacing={5}
 	direction="column"
 	justifyContent="center"
 	alignItems="center"
-> */}
+>
 <form>
 		<TextField
 			size="small"
@@ -433,7 +419,7 @@ marginTop: "10px" }}>
 	 	{activeStep === steps.length - 1 ? 'Finish' : 'Next'}
 	</Button>
 </form>
-{/* </Grid> */}
+</Grid>
 </div>
 	);
 	case 1:

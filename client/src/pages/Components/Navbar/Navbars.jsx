@@ -45,18 +45,24 @@ return (
       <Button color="inherit">
         <Link to="/home" className={Styles.link}>
           <i className="fas fa-lg fa-home me-1" />
-              Home
+            <div className={Styles.hide}>
+                Home
+            </div>
         </Link>
       </Button>
       <Button color="inherit">
         <Link to="/chat" className={Styles.link}>
           <i className="fas fa-lg fa-paper-plane me-2" />
+          <div className={Styles.hide}>
               Chat
+          </div>
         </Link>
       </Button>
       <Button color="inherit">
           <i className="bi fa-lg bi-person-fill me-1" />
-            Profile
+          <div className={Styles.hide}>
+              Profile
+          </div>
       </Button>
     </Toolbar>
   </AppBar>
