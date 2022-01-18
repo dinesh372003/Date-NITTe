@@ -16,16 +16,44 @@
 }
 .card {
     width: 33.3% !important;
-    background-color: rgb(231,245,247);
+    background-color: transparent;
+    perspective: 1000px;
     height: 100% !important;
     text-align: center;
+    margin: 0px 1px;
     border: 1px solid black;
 }
-.card:hover {
-    cursor: pointer;
+.cardinner {
+    background-color: rgb(231,245,247);
+    height: 100%;
+    width: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.card:hover .cardinner {
+    transform: rotateY(180deg);
+}
+.cardfront, .cardback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.cardback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+.wordwrap {
+    width: 95%;
+    word-wrap: break-word;
 }
 .profile {
     width: 100%;
+    height: 70%;
+    border-bottom: 2px solid rgb(190, 190, 190);
 }
 .arrows1,.arrows2{
     display: flex;
