@@ -1,0 +1,56 @@
+body, html {
+  overflow: hidden;
+}
+
+.bg {
+  height: 100%;
+  background-size: cover;
+}
+
+.column1 {
+  float: left;
+  width: 5%;
+  height: 1px;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  height: 90vh;
+  padding: 10px;
+  border-right: 2.5px solid #009dff;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.column2::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.column3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  padding: 10px;
+  color: black;
+  font-weight: 500;
+  font-size: medium;
+  margin: 5px;
+  height: 250px;
+  border: 1px solid grey;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fadae8;
+}
+
+.column4 {
+  float: left;
+  width: 5%;
+  height: 1px;
+}
+/*# sourceMappingURL=Style.module.css.map */

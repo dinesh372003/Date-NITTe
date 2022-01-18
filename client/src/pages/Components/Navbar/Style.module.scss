@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    line-height: 100%;
+    background-color: rgba(242, 245, 245,0.75);
+    box-shadow: 0 4px 8px 0 rgba(10, 2, 2, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 15px;
+}
+.flexstart {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-items: flex-end;
+    font-size: 25px;
+    font-weight: 700;
+}
+.Name {
+    color: rgb(31, 23, 23);
+}
+.Name:hover {
+    transform: scale(1.05);
+    transition: 1s;
+    cursor: pointer;
+}
+.logo {
+    height: 50px;
+    width: 50px;
+    margin: 0px 10px 0px 20px;
+    object-fit: cover;
+    object-position: center;
+}
+.flexend {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 50%;
+    font-size: 10px;
+    font-weight: 500;
+}
+.button1 {
+    height: 75%;
+    margin: 0 3px !important;
+    font-size: 15px;
+    border: 1px solid rgb(125, 125, 125) !important;
+    border-radius: 10px !important;
+}
+.button1:hover {
+    transform: scale(1.05);
+    border: 1px solid black !important;
+    background-color: rgb(224, 221, 221) !important;
+    font-weight: 600 !important;
+}

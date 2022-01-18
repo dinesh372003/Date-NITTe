@@ -2,8 +2,10 @@ import React from "react";
 import {
 	BrowserRouter as Router, Route, Switch, Redirect,
 } from "react-router-dom";
+
 import { Login } from "./pages/auth/login";
 import { Register } from "./pages/auth/register";
+import { Home } from "./pages/home";
 // import { Navigation } from "./pages/navigation";
 
 const App = () => (
@@ -14,6 +16,7 @@ const App = () => (
 		<Switch>
 			<Route exact path="/register" component={Register} />
 			<Route exact path="/login" component={Login} />
+			<Route exact path="/home" component={Home} />
 		</Switch>
 	</Router>
 );
