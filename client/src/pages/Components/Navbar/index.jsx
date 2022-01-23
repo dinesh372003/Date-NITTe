@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { Button } from "@material-ui/core";
 
@@ -15,18 +16,26 @@ function index() {
 				</div>
 			</div>
 			<div className={Styles.flexend}>
+
 				<Button className={Styles.button1} type="button">
-					<i className="fas fa-lg fa-home me-2" />
-					Home
+					<Link to="/home" className={Styles.link}>
+						<i className="fas fa-lg fa-home me-2" />
+						Home
+					</Link>
 				</Button>
+
 				<Button className={Styles.button1} type="button">
-					<i className="fas fa-lg fa-paper-plane me-2" />
-					Chat
+					<Link to="/chat" className={Styles.link}>
+						<i className="fas fa-lg fa-paper-plane me-2" />
+						Chat
+					</Link>
 				</Button>
+
 				<Button className={Styles.button1} type="button">
 					<i className="fas fa-lg fa-user-alt me-2" />
 					Profile
 				</Button>
+
 				<div className="me-3" />
 			</div>
 		</div>

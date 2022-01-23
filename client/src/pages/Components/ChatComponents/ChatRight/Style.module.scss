@@ -1,0 +1,57 @@
+.container {
+    height: 100%;
+    width: 100%;
+}
+.top {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 50px;
+    align-items: center;
+    border-bottom: 2px solid black;
+    border-radius: 0 20px 0 0;
+    box-shadow: 0 4px 8px 0 rgba(10, 2, 2, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Profile {
+    height: 45px;
+    width: 45px;
+    margin-left: 5px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+.Name {
+    margin-left: 5px;
+}
+$a: 100%;
+$b: 90px;
+.Msges
+{
+    display: flex;
+    flex-direction: column-reverse;
+    height: calc(#{$a} - #{$b});
+    overflow-y: auto;
+}
+
+// Scroll Bar Styling
+
+.Msges::-webkit-scrollbar 
+{ 
+    width: 7.5px;
+}
+.Msges::-webkit-scrollbar-track {
+    background: none; 
+  }
+   
+.Msges::-webkit-scrollbar-thumb {
+    background: rgba(192, 182, 182, 0.75); 
+  }
+  
+.Msges::-webkit-scrollbar-thumb:hover {
+    background: rgba(133, 133, 133, 0.75); 
+  }
+.Msges::-webkit-scrollbar-thumb:active {
+    background: rgb(133,133,133); 
+  }

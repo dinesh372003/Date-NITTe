@@ -8,7 +8,7 @@
   background-color: rgba(242, 245, 245, 0.75);
   -webkit-box-shadow: 0 4px 8px 0 rgba(10, 2, 2, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(10, 2, 2, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .flexstart {
@@ -32,8 +32,8 @@
 .Name:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   cursor: pointer;
 }
 
@@ -74,8 +74,19 @@
 .button1:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  border: 1px solid black !important;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  border: 2px solid blue !important;
   background-color: #e0dddd !important;
   font-weight: 600 !important;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  color: black;
 }
 /*# sourceMappingURL=Style.module.css.map */

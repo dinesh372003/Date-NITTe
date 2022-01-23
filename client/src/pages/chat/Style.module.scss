@@ -1,0 +1,89 @@
+.bg {
+    height: 100%;
+    background-size: cover;
+}
+$a: 100%;
+$b: 60px;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(#{$a} - #{$b});
+}
+.content {
+    display: flex;
+    width: 85%;
+    height: 90%;
+    padding: 5px;
+    border-radius: 25px;
+}
+$c: 300px;
+$d: 100%;
+.left {
+    border-left: 1px solid blueviolet;
+    border-bottom: 1px solid blueviolet;
+    border-top: 1px solid blueviolet;
+    border-right: 1px solid grey;
+    border-radius: 25px 0px 0px 25px;
+    width: #{$c};
+    background-color: rgba(225,241,255,0.5);
+}
+$e: 100%;
+$f: 50px;
+.NameList {
+    height: calc(#{$e} - #{$f});
+    overflow-y: auto;
+    border-radius: 0 0 0 20px;
+}
+.right {
+    border-right: 1px solid red;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    border-left: 1px solid grey;
+    border-radius: 0px 25px 25px 0px;
+    width: calc(#{$d} - #{$c});
+    background-color: rgba(255,223,235,0.5);
+}
+.top {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    line-height: 50px;
+    border-bottom: 2px solid black;
+}   
+.LeftTop {
+    width: 100%;
+    font-weight: 750;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px 0 0 0;
+    background-color: rgba(243, 243, 243, 0.5);
+}
+.Profile {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+// Scroll Bar Styling
+
+.NameList::-webkit-scrollbar { 
+    width: 7.5px;
+}
+.NameList::-webkit-scrollbar-track {
+    background: rgb(228, 223, 223); 
+}
+.NameList::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background: rgba(192, 182, 182, 0.75); 
+}  
+.NameList::-webkit-scrollbar-thumb:hover {
+    background: rgba(133, 133, 133, 0.5); 
+}
+.NameList::-webkit-scrollbar-thumb:active {
+    background: rgb(133,133,133); 
+}

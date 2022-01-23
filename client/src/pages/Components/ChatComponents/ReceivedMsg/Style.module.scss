@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    // min-height: 40px;
+    height: auto;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 2.5px 0px;
+}
+.content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-width: 70%;
+    margin-left: 7.5px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(92, 92, 88);
+}
+.Msg {
+    height: 100%;
+    width: 100%;
+    word-wrap: break-word;
+}

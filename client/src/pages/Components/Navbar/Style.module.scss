@@ -5,7 +5,7 @@
     line-height: 100%;
     background-color: rgba(242, 245, 245,0.75);
     box-shadow: 0 4px 8px 0 rgba(10, 2, 2, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .flexstart {
     display: flex;
@@ -21,7 +21,7 @@
 }
 .Name:hover {
     transform: scale(1.05);
-    transition: 1s;
+    transition: 0.5s;
     cursor: pointer;
 }
 .logo {
@@ -49,7 +49,15 @@
 }
 .button1:hover {
     transform: scale(1.05);
-    border: 1px solid black !important;
+    transition: 0.25s;
+    border: 2px solid blue !important;
     background-color: rgb(224, 221, 221) !important;
     font-weight: 600 !important;
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
+.link:hover {
+    color: black;
 }
