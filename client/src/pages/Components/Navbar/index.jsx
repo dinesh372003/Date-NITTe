@@ -32,8 +32,10 @@ function index() {
 				</Button>
 
 				<Button className={Styles.button1} type="button">
-					<i className="fas fa-lg fa-user-alt me-2" />
-					Profile
+					<Link to="/profile" className={Styles.link}>
+						<i className="fas fa-lg fa-user-alt me-2" />
+						Profile
+					</Link>
 				</Button>
 
 				<div className="me-3" />

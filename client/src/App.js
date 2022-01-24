@@ -7,6 +7,7 @@ import { Login } from "./pages/auth/login";
 import { Register } from "./pages/auth/register";
 import { Home } from "./pages/home";
 import { Chat } from "./pages/chat";
+import { Profile } from "./pages/profile";
 // import { Navigation } from "./pages/navigation";
 
 const App = () => (
@@ -19,6 +20,7 @@ const App = () => (
 			<Route exact path="/login" component={Login} />
 			<Route exact path="/home" component={Home} />
 			<Route exact path="/chat" component={Chat} />
+			<Route exact path="/profile" component={Profile} />
 		</Switch>
 	</Router>
 );
