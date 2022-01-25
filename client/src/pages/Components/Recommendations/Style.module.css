@@ -48,7 +48,6 @@
 
 #arrow1 {
   cursor: pointer;
-  border-radius: 50%;
 }
 
 .arrows2 {
@@ -72,6 +71,16 @@
 
 #arrow2 {
   cursor: pointer;
+}
+
+#arrow1:hover {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+}
+
+#arrow2:hover {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
 }
 
 .card {

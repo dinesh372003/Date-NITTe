@@ -10,7 +10,7 @@
   height: auto;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   text-align: left;
   margin: 2.5px 0px;
 }
