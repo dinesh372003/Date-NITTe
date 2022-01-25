@@ -9,7 +9,7 @@ body, html {
 
 .column1 {
   float: left;
-  width: 5%;
+  width: 10%;
   height: 1px;
 }
 
@@ -28,20 +28,20 @@ body, html {
 }
 
 .column3 {
+  float: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  float: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40%;
+  width: 35%;
   padding: 10px;
   color: black;
   font-weight: 500;
   font-size: medium;
   margin: 20px 5px;
-  height: 250px;
+  height: 300px;
   border: 1px solid grey;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

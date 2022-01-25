@@ -7,8 +7,9 @@ body,html {
 }
 .column1 {
     float: left;
-    width: 5%;
+    width: 10%;
     height: 1px;
+    // border: 1px solid red;
 }
 .column2 {
   float: left;
@@ -25,23 +26,26 @@ body,html {
 }
 
 .column3 {
-  display: flex;
   float: left;
+  display: flex;
   align-items: center;
-  width: 40%;
+  width: 35%;
   padding: 10px;
   color: black;
   font-weight: 500;
   font-size: medium;
   margin: 20px 5px;
-  height: 250px;
+  height: 300px;
   border: 1px solid grey;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   background-color: rgb(250,218,232);
 }
-
+// $a: 5%;
+// $b: 5px;
 .column4 {
   float: left;
   width: 5%;
+  // width: calc(#{$a} - #{$b});
+  // border: 1px solid red;
   height: 1px;
 }

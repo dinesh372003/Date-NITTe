@@ -7,11 +7,11 @@ function index() {
 	return (
 		<div className={Styles.container}>
 
-			<div className={Styles.arrows1}>
-				<i id={Styles.arrow1} className="fas fa-2x fa-chevron-left" />
-			</div>
-
 			<div className={Styles.cardscroll}>
+
+				<div className={Styles.arrows1}>
+					<i id={Styles.arrow1} className="fas fa-2x fa-chevron-left" />
+				</div>
 
 				<div className={Styles.card}>
 					<div className={Styles.cardinner}>
@@ -74,12 +74,13 @@ function index() {
 							</div>
 						</div>
 					</div>
+
 				</div>
 
-			</div>
+				<div className={Styles.arrows2}>
+					<i id={Styles.arrow2} className="fas fa-2x fa-chevron-right" />
+				</div>
 
-			<div className={Styles.arrows2}>
-				<i id={Styles.arrow2} className="fas fa-2x fa-chevron-right" />
 			</div>
 
 		</div>
